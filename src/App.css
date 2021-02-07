@@ -1,4 +1,47 @@
-.App {
+@font-face {
+  font-family: "Alatsi-Regular";
+  src : url("./fonts/Alatsi-Regular.ttf");
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Alatsi-Regular";
+  margin: 0;
+}
+
+a {
+  color: #FF0000;
+  text-decoration-line: none;
+}
+
+a:hover {
+  color: brown;
+}
+
+/* a.current:link, a.current:visited {
+  color: #00FF00;
+  background-color: #000000;
+} */
+
+/* a:link, a:visited {
+  color:pink;
+} */
+
+body.home a.home:link,
+body.skill a.skill:link,
+body.experience a.experience:link,
+body.portfolio a.portfolio:link,
+body.aboutme a.aboutme:link {
+  -webkit-text-stroke: 2px;
+  color:pink;
+}
+
+.HeaderLinkPage {
+  text-transform: uppercase;
+  margin-inline: 30px;
+  font-size: 24px;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +78,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
