@@ -9,11 +9,11 @@ class Footer extends Component {
                     <p style={{ color: COLORS.Red, textTransform: "uppercase", fontSize: 36 }}>Contact me</p>
                 </div>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                    <img src="/images/mail_FFFFFF_48.png" style={{ height: "40px", marginInline: 10 }} />
+                    <img src="/webresume/images/mail_FFFFFF_48.png" style={{ height: "40px", marginInline: 10 }} />
                     <p style={{ color: COLORS.White, fontSize: 20 }}>mos.ruangtanasak@gmail.com</p>
                 </div>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                    <img src="/images/iphone_FFFFFF_60.png" style={{ height: "40px", marginInline: 10 }} />
+                    <img src="/webresume/images/iphone_FFFFFF_60.png" style={{ height: "40px", marginInline: 10 }} />
                     <p style={{ color: COLORS.White, fontSize: 20 }}>0875971249</p>
                 </div>
             </div>

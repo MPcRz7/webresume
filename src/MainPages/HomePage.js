@@ -14,7 +14,7 @@ class Home extends Component {
                 <LayoutTemplate>
                     <div style={{ display: "grid", gridTemplateRows: "1fr 1fr", gridTemplateColumns: "4fr 6fr", height: "100%", minHeight: bodyHeight }}>
                         <div style={{ gridRow: "1 / span 2", gridColumn: "1", display: "flex", justifyContent: "flex-end", alignItems: "flex-end", paddingInline: 10 }}>
-                            <img src="/images/Mos_HomeImage.png" style={{ height: mosHomeImageHeight }} />
+                            <img src="/webresume/images/Mos_HomeImage.png" style={{ height: mosHomeImageHeight }} />
                         </div>
                         <div style={{ gridRow: "1", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center", paddingInline: 20 }}>
                             <p style={{ fontSize: 27, textTransform: "uppercase", color: COLORS.DarkGrey }} >"If you can't stop the waves, learn to surf."</p>

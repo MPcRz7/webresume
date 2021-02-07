@@ -18,11 +18,11 @@ class App extends Component {
   renderRouter() {
     return (
       <Switch>
-        <Route path="/" exact={true} component={HomePage} />
-        <Route path="/skill" exact={true} component={SkillPage} />
-        <Route path="/experience" exact={true} component={ExperiencePage} />
-        <Route path="/portfolio" exact={true} component={PortfolioPage} />
-        <Route path="/aboutme" exact={true} component={AboutMePage} />
+        <Route path="/webresume/" exact={true} component={HomePage} />
+        <Route path="/webresume/skill" exact={true} component={SkillPage} />
+        <Route path="/webresume/experience" exact={true} component={ExperiencePage} />
+        <Route path="/webresume/portfolio" exact={true} component={PortfolioPage} />
+        <Route path="/webresume/aboutme" exact={true} component={AboutMePage} />
 
         <Route component={NotFoundPage} />
       </Switch>

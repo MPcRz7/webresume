@@ -8,7 +8,7 @@ class Profile extends Component{
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", height: "100%", paddingInline: 40 }}>
                     <div style={{ gridColumn: "1", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <div style={{ width: "140px", height: "140px", backgroundPosition: "center", backgroundSize: "cover", backgroundColor: "white", border: "3px solid red", borderRadius: "50%", overflow: "hidden" }}>
-                            <img src="images/MosProfile_1.png" style={{ width: "100%", height: "100%", objectFit: "cover"}} />
+                            <img src="/webresume/images/MosProfile_1.png" style={{ width: "100%", height: "100%", objectFit: "cover"}} />
                         </div>
                     </div>
                     <div style={{ gridColumn: "2", paddingBlockStart: 20, paddingBlockEnd: 10, display: "flex", flexDirection: "column", justifyContent: "center" }}>
