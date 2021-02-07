@@ -20,7 +20,7 @@ class PortfolioPage extends Component {
 
     componentDidMount(){
         const userId = 1;
-        axios.get("http://localhost:3001/portfolios/" + userId).then(res => {
+        axios.get(process.env.REACT_APP_API_URL + "/portfolios/" + userId).then(res => {
             this.setState({ portfolio: res.data.userPortfolio });
         })
     }

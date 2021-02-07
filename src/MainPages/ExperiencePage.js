@@ -23,7 +23,7 @@ class ExperiencePage extends Component {
 
     componentDidMount(){
         const userId = 1;
-        axios.get("http://localhost:3001/experiences/" + userId).then(res => {
+        axios.get(process.env.REACT_APP_API_URL + "/experiences/" + userId).then(res => {
             this.setState({ experiences : res.data.userExperiences });
         })
     }

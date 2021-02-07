@@ -20,7 +20,7 @@ class SkillPage extends Component {
 
     componentDidMount(){
         const userId = 1;
-        axios.get("http://localhost:3001/skills/" + userId).then(res => {
+        axios.get(process.env.REACT_APP_API_URL + "/skills/" + userId).then(res => {
             {this.setState ({ skills : res.data.userSkills })}
             //console.log("RESDataUserSkill | " + res.data.userSkills);
         })
