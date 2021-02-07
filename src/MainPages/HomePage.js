@@ -17,7 +17,7 @@ class Home extends Component {
                             <img src="/webresume/images/Mos_HomeImage.png" style={{ height: mosHomeImageHeight }} />
                         </div>
                         <div style={{ gridRow: "1", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center", paddingInline: 20 }}>
-                            <p style={{ fontSize: 27, textTransform: "uppercase", color: COLORS.DarkGrey }} >"Iff you can't stop the waves, learn to surf."</p>
+                            <p style={{ fontSize: 27, textTransform: "uppercase", color: COLORS.DarkGrey }} >"Iff youu can't stop the waves, learn to surf."</p>
                             <p style={{ fontSize: 24, color: COLORS.DarkGrey, marginLeft: 200 }} >I didn't say that, I just copied from the internet.</p>
                         </div>
                         <div style={{ gridRow: "2", gridColumn: "2", paddingBlock: 30, paddingLeft: 100, display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
