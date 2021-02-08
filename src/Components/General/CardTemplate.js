@@ -6,8 +6,8 @@ class CardTemplate extends Component {
         const { title = "Title", children } = this.props;
         return (
             <div style={{ height: "100%", display: "flex" }}>
-                <div style={{ borderRadius: 20, backgroundColor: COLORS.White, paddingBlock: 30, display: "flex", flexDirection: "column", flex: 1 }}>
-                    <div style={{ backgroundColor: COLORS.Grey, paddingBlock: 10, paddingInline: 20, alignSelf: "flex-start" }}>
+                <div style={{ borderRadius: 20, backgroundColor: COLORS.White, paddingBlockStart: 30, paddingBlockEnd: 30, display: "flex", flexDirection: "column", flex: 1 }}>
+                    <div style={{ backgroundColor: COLORS.Grey, paddingBlockStart: 10, paddingBlockEnd: 10, paddingInlineStart: 20, paddingInlineEnd: 20, alignSelf: "flex-start" }}>
                         <p style={{ color: COLORS.Black, textTransform: "uppercase", textAlign: "center", fontSize: 24 }}>{title}</p>
                     </div>
                     <div style={{ padding: 20, flex: 1 }}>

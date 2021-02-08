@@ -12,7 +12,7 @@ class Languages extends Component{
                             <img src="/webresume/images/Thailand_flag.png" style={{ height: "50px"}} />
                         </div>
                         <div style={{ gridRow: "1", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlock: 5 }}>Thai</p>
+                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Thai</p>
                         </div>
                         <div style={{ gridRow: "1", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <p style={{ fontSize: 24 }}>Native</p>
@@ -21,7 +21,7 @@ class Languages extends Component{
                             <img src="/webresume/images/UK_flag.png" style={{ height: "50px" }} />
                         </div>
                         <div style={{ gridRow: "2", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlock: 5 }}>English</p>
+                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>English</p>
                         </div>
                         <div style={{ gridRow: "2", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <p style={{ fontSize: 24 }}>Intermediate</p>
@@ -31,7 +31,7 @@ class Languages extends Component{
                             <img src="/webresume/images/Japan_flag.png" style={{ height: "50px" }} />
                         </div>
                         <div style={{ gridRow: "3", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlock: 5 }}>Japanese</p>
+                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Japanese</p>
                         </div>
                         <div style={{ gridRow: "3", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
                             <p style={{ fontSize: 24 }}>Basic</p>

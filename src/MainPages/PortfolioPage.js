@@ -36,55 +36,12 @@ const PortfolioPage = () => {
     return (
         <body className="portfolio">
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
-                <div style={{ display: "flex", flexFlow: "wrap", paddingBlock: 20 }}>
+                <div style={{ display: "flex", flexFlow: "wrap", paddingBlockStart: 20, paddingBlockEnd: 20 }}>
                     {renderAppName()}
                 </div>
             </LayoutTemplate>
         </body>
     )
 }
-
-
-// class PortfolioPage extends Component {
-
-//     constructor(props) {
-//         super(props);
-//         this.state = {
-//             portfolio : []
-//         }
-//     }
-
-//     componentDidMount(){
-//         const userId = 1;
-//         // axios.get(process.env.REACT_APP_API_URL + "/portfolios/" + userId).then(res => {
-//         //     this.setState({ portfolio: res.data.userPortfolio });
-//         // })
-//         this.setState({ portfolio : resumeData.portfolios.find(_=>_.id == userId).userPortfolio });
-//     }
-
-//     renderAppName() {
-//         return (
-//             this.state.portfolio.map((createdApp) => {
-//                 return (
-//                     <div key={createdApp.id}>
-//                         <PortfolioListItemTemplate {...createdApp} />
-//                     </div>
-//                 )
-//             })
-//         )
-//     }
-
-//     render() {
-//         return (
-//             <body className="portfolio">
-//                 <LayoutTemplate>
-//                     <div style={{ display: "flex", flexFlow: "wrap", paddingBlock: 20 }}>
-//                         {this.renderAppName()}
-//                     </div>
-//                 </LayoutTemplate>
-//             </body>
-//         )
-//     }
-// }
 
 export default PortfolioPage;

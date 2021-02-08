@@ -18,7 +18,7 @@ const AboutMePage = () => {
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
                 <div style={{ width: windowWidth }}>
                     <Profile />
-                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 50, paddingBlock: 50, paddingInline: 100, backgroundColor: COLORS.Grey }}>
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 50, paddingBlockStart: 50, paddingBlockEnd: 50, paddingInlineStart: 100, paddingInlineEnd: 100, backgroundColor: COLORS.Grey }}>
                         <div style={{ gridRow: "1 / span 2", gridColumn: "1" }}>
                             <Summary />
                         </div>
@@ -34,30 +34,5 @@ const AboutMePage = () => {
         </body>
     )
 }
-
-// class AboutMePage extends Component {
-//     render() {
-//         return (
-//             <body className="aboutme">
-//                 <LayoutTemplate>
-//                     <div>
-//                         <Profile />
-//                         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 50, paddingBlock: 50, paddingInline: 100, backgroundColor: COLORS.Grey, height: "800px" }}>
-//                             <div style={{ gridRow: "1 / span 2", gridColumn: "1" }}>
-//                                 <Summary />
-//                             </div>
-//                             <div style={{ gridRow: "1", gridColumn: "2" }}>
-//                                 <Education />
-//                             </div>
-//                             <div style={{ gridRow: "2", gridColumn: "2" }}>
-//                                 <Languages />
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </LayoutTemplate>
-//             </body>
-//         )
-//     }
-// }
 
 export default AboutMePage;

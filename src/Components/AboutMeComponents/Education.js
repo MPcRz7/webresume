@@ -12,7 +12,7 @@ class Education extends Component {
                             <img src="/webresume/images/Chula_logo.png" style={{ height: "80px"}} />
                         </div>
                         <div style={{ gridRow: "1", gridColumn: "2" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlock: 5 }}>Chulalongkorn University</p>
+                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Chulalongkorn University</p>
                             <p style={{ fontSize: 18 }}>Becherlor's Degree in Eletrical Engineering</p>
                             <p style={{ fontSize: 18 }}>Second Class Honors [GPAX: 3.28]</p>
                         </div>
@@ -20,7 +20,7 @@ class Education extends Component {
                             <img src="/webresume/images/NTUN_logo.jpg" style={{ height: "90px" }} />
                         </div>
                         <div style={{ gridRow: "2", gridColumn: "2" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlock: 5 }}>Nawaminthrachinuthit Triamudomsuksanomklao school</p>
+                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Nawaminthrachinuthit Triamudomsuksanomklao school</p>
                             <p style={{ fontSize: 18 }}>Science and Mathematics program</p>
                         </div>
                     </div>
