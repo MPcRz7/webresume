@@ -3,8 +3,9 @@ import COLORS from "../../StaticVariable/Colors.js";
 
 class Footer extends Component {
     render() {
+        const { footerHeight } = this.props;
         return (
-            <div style={{ backgroundColor: COLORS.Black, display: "flex", justifyContent: "space-evenly", alignItems: "center", paddingInline: 30, paddingBlock: 50 }}>
+            <div style={{ backgroundColor: COLORS.Black, display: "flex", justifyContent: "space-evenly", alignItems: "center", paddingBlock: 0, width: "100%", height: footerHeight }}>
                 <div>
                     <p style={{ color: COLORS.Red, textTransform: "uppercase", fontSize: 36 }}>Contact me</p>
                 </div>

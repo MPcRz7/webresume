@@ -4,7 +4,7 @@ import COLORS from "../../StaticVariable/Colors.js";
 class Profile extends Component{
     render(){
         return(
-            <div style={{ height: "200px", backgroundColor: COLORS.AlmostBlack }}>
+            <div style={{ height: "200px", backgroundColor: COLORS.AlmostBlack, width: "100%" }}>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 2fr", height: "100%", paddingInline: 40 }}>
                     <div style={{ gridColumn: "1", display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <div style={{ width: "140px", height: "140px", backgroundPosition: "center", backgroundSize: "cover", backgroundColor: "white", border: "3px solid red", borderRadius: "50%", overflow: "hidden" }}>

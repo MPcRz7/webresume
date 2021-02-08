@@ -1,29 +1,25 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
+import useWindowSize from "../Handler/WindowSize.js";
 import LayoutTemplate from "../Components/General/LayoutTemplate.js";
 import ExperienceListItemTemplate from "../Components/ExperienceComponents/ExperienceListItemTemplate.js";
 import axios from "axios";
 import resumeData from "../LocalData/resumeData.json";
 
-class ExperiencePage extends Component {
+const ExperiencePage = () => {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            experiences: []
-        }
-    }
+    const [experiences, setExperiences] = useState([]);
 
-    componentDidMount(){
+    useEffect(() => {
         const userId = 1;
         // axios.get(process.env.REACT_APP_API_URL + "/experiences/" + userId).then(res => {
-        //     this.setState({ experiences : res.data.userExperiences });
+        //     setExperiences(res.data.userExperiences);
         // })
-        this.setState({ experiences : resumeData.experiences.find(_=>_.id == userId).userExperiences });
-    }
+        setExperiences(resumeData.experiences.find(_ => _.id == userId).userExperiences);
+    }, []);
 
-    renderCompanies() {
+    const renderCompanies = () => {
         return (
-            this.state.experiences.map((experience) => {
+            experiences.map((experience) => {
                 return (
                     <div key={experience.id}>
                         <ExperienceListItemTemplate {...experience} />
@@ -33,19 +29,64 @@ class ExperiencePage extends Component {
         )
     }
 
-    render() {
-        const windowWidth = window.innerWidth;
-        return (
-            <body className="experience">
-                <LayoutTemplate>
-                    <div style={{ display: "flex", width: windowWidth, position: "relative", overflowX: "scroll", scrollSnapType: "x" }}>
-                        {this.renderCompanies()}
-                    </div>
-                </LayoutTemplate>
-            </body>
-        )
+    const [windowHeight, windowWidth] = useWindowSize();
+    const headerHeight = 120;
+    const footerHeight = 145;
+    const bodyHeight = windowHeight - headerHeight - footerHeight;
+    return (
+        <body className="experience">
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
+                <div style={{ display: "flex", width: windowWidth, position: "relative", overflowX: "scroll", scrollSnapType: "x" }}>
+                    {renderCompanies()}
+                </div>
+            </LayoutTemplate>
+        </body>
+    )
 
-    }
 }
+
+// class ExperiencePage extends Component {
+
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             experiences: []
+//         }
+//     }
+
+//     componentDidMount(){
+//         const userId = 1;
+//         // axios.get(process.env.REACT_APP_API_URL + "/experiences/" + userId).then(res => {
+//         //     this.setState({ experiences : res.data.userExperiences });
+//         // })
+//         this.setState({ experiences : resumeData.experiences.find(_=>_.id == userId).userExperiences });
+//     }
+
+//     renderCompanies() {
+//         return (
+//             this.state.experiences.map((experience) => {
+//                 return (
+//                     <div key={experience.id}>
+//                         <ExperienceListItemTemplate {...experience} />
+//                     </div>
+//                 )
+//             })
+//         )
+//     }
+
+//     render() {
+//         const windowWidth = window.innerWidth;
+//         return (
+//             <body className="experience">
+//                 <LayoutTemplate>
+//                     <div style={{ display: "flex", width: windowWidth, position: "relative", overflowX: "scroll", scrollSnapType: "x" }}>
+//                         {this.renderCompanies()}
+//                     </div>
+//                 </LayoutTemplate>
+//             </body>
+//         )
+
+//     }
+// }
 
 export default ExperiencePage;

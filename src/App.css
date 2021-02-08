@@ -37,7 +37,8 @@ body.aboutme a.aboutme:link {
 
 .HeaderLinkPage {
   text-transform: uppercase;
-  margin-inline: 30px;
+  /* margin-inline: 30px; */
+  margin: 30px;
   font-size: 24px;
 }
 

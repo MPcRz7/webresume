@@ -8,6 +8,8 @@ import AboutMePage from "./MainPages/AboutMePage.js";
 import NotFoundPage from "./MainPages/NotFoundPage.js";
 import "./App.css";
 
+import WindowSize from "./Handler/WindowSize.js";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -33,6 +35,7 @@ class App extends Component {
       <BrowserRouter>
         {this.renderRouter()}
       </BrowserRouter>
+      
     );
   }
 }

@@ -30,7 +30,7 @@ class ExperienceListItemTemplate extends Component {
                     <div style={{ position: "absolute", left: 0, right: 0, top: 25, transform: `translateY(-50%)`, backgroundColor: "#FF0000", width: "100%", height: "20px" }} />
                     <p style={{ position: "absolute", textAlign: "center", left: 0, right: 0, top: 25, transform: `translateY(-50%)`, color: "white" }}>{Duration}</p>
                     {companyName && <div style={{ position: "absolute", left: "50%", bottom: "0%", transform: `translateX(-50%)`, height: "170px", width: "170px", borderRadius: "50%", overflow: "hidden", border: "15px solid transparent" }}>
-                        <img src={imageCompanyPath} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                        <img src={imageCompanyPath} style={{ width: "100%", height: "100%", objectFit: "cover", overflow: "hidden" }} />
                     </div>}
                 </div>
                 <div style={{ marginBlock: 5, display: "flex", flexDirection: "column", alignItems: "center", paddingInline: 30 }}>
