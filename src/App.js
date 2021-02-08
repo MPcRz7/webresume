@@ -8,8 +8,6 @@ import AboutMePage from "./MainPages/AboutMePage.js";
 import NotFoundPage from "./MainPages/NotFoundPage.js";
 import "./App.css";
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);

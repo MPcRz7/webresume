@@ -4,6 +4,8 @@ import HorizontalScroll from "react-scroll-horizontal";
 import Dimensions from "react-dimensions";
 import LayoutTemplate from "../Components/General/LayoutTemplate.js";
 import SkillListItemTemplate from "../Components/SkillComponents/SkillListItemTemplate.js";
+import resumeData from "../LocalData/resumeData.json";
+
 
 
 class SkillPage extends Component {
@@ -11,19 +13,16 @@ class SkillPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // skills: [{ category: "Mobile Development", items: [{ name: "React Native", lang: "Javascript", imagePath: "/images/ReactNative_Skill.png" }, { name: "Xamarin", lang: "C#", imagePath: "/images/Xamarin_Skill.png" }] },
-            // { category: "Web Development", items: [{ name: "React JS", lang: "Javascript", imagePath: "/images/ReactJS_Skill.png" }] },
-            // { category: "Others", items: [{ name: "MATLAB Simulink", lang: "", imagePath: "/images/MatlabSimulink.png" }, { name: "Adobe illustrator", lang: "", imagePath: "/images/AdobeIllustrator.jpg" }, { name: "Adobe Photoshop", lang: "", imagePath: "/images/AdobePhotoshop.jpg" }, { name: "Adobe illustrator", lang: "", imagePath: "/images/AdobeIllustrator.jpg" }, { name: "Adobe Photoshop", lang: "", imagePath: "/images/AdobePhotoshop.jpg" }] }]
             skills: []
         }
     }
 
     componentDidMount(){
         const userId = 1;
-        axios.get(process.env.REACT_APP_API_URL + "/skills/" + userId).then(res => {
-            {this.setState ({ skills : res.data.userSkills })}
-            //console.log("RESDataUserSkill | " + res.data.userSkills);
-        })
+        // axios.get(process.env.REACT_APP_API_URL + "/skills/" + userId).then(res => {
+        //     {this.setState ({ skills : res.data.userSkills })}
+        // })
+        this.setState({ skills : resumeData.skills.find(_=>_.id == userId).userSkills });
     }
 
     renderItems(items) {
