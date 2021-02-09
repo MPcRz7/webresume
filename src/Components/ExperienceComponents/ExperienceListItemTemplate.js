@@ -25,7 +25,7 @@ class ExperienceListItemTemplate extends Component {
         const windowWidthHalf = window.innerWidth / 2;
         return (
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBlockStart: 30, paddingBlockEnd: 30, scrollSnapAlign: "center" }}>
-                <div style={{ position: "relative", height: "300px", width: windowWidthHalf }}>
+                <div style={{ position: "relative", height: "300px", width: windowWidthHalf, minWidth: 500 }}>
                     {companyName && <div style={{ backgroundImage: `url("/webresume/images/CompanyFrame.png")`, height: "300px", backgroundPosition: "center", backgroundSize: "contain", backgroundRepeat: "no-repeat" }} />}
                     <div style={{ position: "absolute", left: 0, right: 0, top: 25, transform: `translateY(-50%)`, backgroundColor: "#FF0000", width: "100%", height: "20px" }} />
                     <p style={{ position: "absolute", textAlign: "center", left: 0, right: 0, top: 25, transform: `translateY(-50%)`, color: "white" }}>{Duration}</p>

@@ -5,12 +5,13 @@ import Footer from "./Footer.js";
 class LayoutTemplate extends Component {
     render() {
         const { children, headerHeight, footerHeight, bodyHeight, windowWidth } = this.props;
+        const minHeight = Math.max(bodyHeight, 500);
         return (
             <div style={{ height: headerHeight, position: "relative" }}>
                 <div style={{ position: "fixed", top: "0%", width: "100%", zIndex: 1, height: headerHeight }}>
                     <Header headerHeight={headerHeight} windowWidth={windowWidth} />
                 </div>
-                <div style={{ paddingBlockStart: headerHeight, height: "auto", minHeight: bodyHeight}}>{children}</div>
+                <div style={{ paddingBlockStart: headerHeight, height: "auto", minHeight: minHeight }}>{children}</div>
                 <Footer footerHeight={footerHeight} windowWidth={windowWidth} />
             </div>
         )
