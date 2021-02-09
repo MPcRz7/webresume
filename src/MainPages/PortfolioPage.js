@@ -35,10 +35,10 @@ const PortfolioPage = () => {
     const bodyHeight = windowHeight - headerHeight - footerHeight;
     return (
         <body className="portfolio">
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
-                <div style={{ display: "flex", flexFlow: "wrap", paddingBlockStart: 20, paddingBlockEnd: 20 }}>
-                    {renderAppName()}
-                </div>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
+                    <div style={{ display: "flex", flexFlow: "wrap", paddingBlockStart: 20, paddingBlockEnd: 20, justifyContent: "center" }}>
+                        {renderAppName()}
+                    </div>
             </LayoutTemplate>
         </body>
     )

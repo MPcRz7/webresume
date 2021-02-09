@@ -9,7 +9,7 @@ const NotFoundPage = () => {
     const bodyHeight = windowHeight - headerHeight - footerHeight;
     return (
         <div>
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
                 <div style={{ height: bodyHeight, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                     <p style={{ fontSize: 150 }}>404 Not found</p>
                 </div>

@@ -35,7 +35,7 @@ const ExperiencePage = () => {
     const bodyHeight = windowHeight - headerHeight - footerHeight;
     return (
         <body className="experience">
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
                 <div style={{ display: "flex", width: windowWidth, position: "relative", overflowX: "scroll", scrollSnapType: "x" }}>
                     {renderCompanies()}
                 </div>

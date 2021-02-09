@@ -49,7 +49,7 @@ const SkillPage = () => {
     const bodyHeight = windowHeight - headerHeight - footerHeight;
     return (
         <body className="skill">
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight}>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
                 <div>{renderCategories()}</div>
             </LayoutTemplate>
         </body>
