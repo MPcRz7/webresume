@@ -33,10 +33,13 @@ const PortfolioPage = () => {
     const headerHeight = 120;
     const footerHeight = 145;
     const bodyHeight = windowHeight - headerHeight - footerHeight;
+
+    const threshold = 1100;
+    const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
     return (
         <body className="portfolio">
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
-                    <div style={{ display: "flex", flexFlow: "wrap", paddingBlockStart: 20, paddingBlockEnd: 20, justifyContent: "center" }}>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>
+                    <div className="renderAppName">
                         {renderAppName()}
                     </div>
             </LayoutTemplate>

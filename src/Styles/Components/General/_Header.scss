@@ -1,0 +1,31 @@
+.renderHeader {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+    background-color: #ffffffef;
+
+    .renderHeaderLogo {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            border-radius: 25%;
+        }
+    }
+
+    .renderHeaderPageName {
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-transform: uppercase;
+            margin-inline-start: 30px;
+            margin-inline-end: 30px;
+            font-size: 24px;
+        }
+    }
+}

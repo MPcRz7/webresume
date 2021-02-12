@@ -4,15 +4,15 @@ import Footer from "./Footer.js";
 
 class LayoutTemplate extends Component {
     render() {
-        const { children, headerHeight, footerHeight, bodyHeight, windowWidth } = this.props;
+        const { children, headerHeight, footerHeight, bodyHeight, windowWidth, factor } = this.props;
         const minHeight = Math.max(bodyHeight, 500);
         return (
-            <div style={{ height: headerHeight, position: "relative" }}>
-                <div style={{ position: "fixed", top: "0%", width: "100%", zIndex: 1, height: headerHeight }}>
-                    <Header headerHeight={headerHeight} windowWidth={windowWidth} />
+            <div className="LayoutTemplate" style={{ height: headerHeight }}>
+                <div className="LayoutTemplateHeader" style={{ height: headerHeight }}>
+                    <Header headerHeight={headerHeight} windowWidth={windowWidth} factor={factor} />
                 </div>
-                <div style={{ paddingBlockStart: headerHeight, height: "auto", minHeight: minHeight }}>{children}</div>
-                <Footer footerHeight={footerHeight} windowWidth={windowWidth} />
+                <div className="LayoutTemplateBody" style={{ paddingBlockStart: headerHeight, minHeight: minHeight*factor }}>{children}</div>
+                <Footer footerHeight={footerHeight} windowWidth={windowWidth} factor={factor}/>
             </div>
         )
     }

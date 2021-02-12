@@ -1,0 +1,29 @@
+//----- Bases -----//
+@import "./Bases/font";
+@import "./Bases/colors";
+@import "./Bases/general";
+
+//----- Components -----//
+@import "./Components/SkillComponents/SkillListItemTemplate";
+@import "./Components/ExperienceComponents/ExperienceListItemTemplate";
+@import "./Components/PortfolioComponents/PortfolioListItemTemplate";
+@import "./Components/AboutMeComponents/Profile";
+@import "./Components/AboutMeComponents/Summary";
+@import "./Components/AboutMeComponents/Education";
+@import "./Components/AboutMeComponents/Languages";
+
+////------ General Components-----//
+@import "./Components/General/Header";
+@import "./Components/General/Footer";
+@import "./Components/General/LayoutTemplate";
+@import "./Components/General/CardTemplate";
+
+//----- MainPages -----//
+@import "./MainPages/HomePage";
+@import "./MainPages/SkillPage";
+@import "./MainPages/ExperiencePage";
+@import "./MainPages/PortfolioPage";
+@import "./MainPages/AboutMePage";
+@import "./MainPages/NotFoundPage";
+
+

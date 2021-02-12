@@ -1,0 +1,15 @@
+.renderCategories{
+    padding: 30px;
+
+    p {
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .renderCategoriesDiv {
+        position: relative;
+        overflow-x: scroll;
+        display: flex;
+    }
+}

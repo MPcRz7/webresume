@@ -6,36 +6,36 @@ class Languages extends Component{
     render(){
         return(
             <CardTemplate title="Languages">
-                <div style={{ height: "100%", display: "flex", alignItems: "center" }}>
-                    <div style={{ display: "grid", gridTemplateColumns: "auto auto auto", gridTemplateRows: "1fr 1fr 1fr", gap: 30, paddingInlineStart: 40 }}>
-                        <div style={{ gridRow: "1", gridColumn: "1", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <img src="/webresume/images/Thailand_flag.png" style={{ height: "50px"}} />
+                <div className="AboutMeLanguages">
+                    <div className="AboutMeLanguages2">
+                        <div className="AboutMeLanguagesFlag" style={{ gridRow: "1", gridColumn: "1" }}>
+                            <img src="/webresume/images/Thailand_flag.png" />
                         </div>
-                        <div style={{ gridRow: "1", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Thai</p>
+                        <div className="AboutMeLanguagesLanguage" style={{ gridRow: "1", gridColumn: "2" }}>
+                            <p>Thai</p>
                         </div>
-                        <div style={{ gridRow: "1", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24 }}>Native</p>
+                        <div className="AboutMeLanguagesExplanation" style={{ gridRow: "1", gridColumn: "3" }}>
+                            <p className="AboutMeLanguagesLevel">Native</p>
                         </div>
-                        <div style={{ gridRow: "2", gridColumn: "1", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <img src="/webresume/images/UK_flag.png" style={{ height: "50px" }} />
+                        <div className="AboutMeLanguagesFlag" style={{ gridRow: "2", gridColumn: "1" }}>
+                            <img src="/webresume/images/UK_flag.png" />
                         </div>
-                        <div style={{ gridRow: "2", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>English</p>
+                        <div className="AboutMeLanguagesLanguage" style={{ gridRow: "2", gridColumn: "2" }}>
+                            <p >English</p>
                         </div>
-                        <div style={{ gridRow: "2", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24 }}>Intermediate</p>
-                            <p style={{ fontSize: 18 }}>[TOEIC: 670 3 years ago]</p>
+                        <div className="AboutMeLanguagesExplanation" style={{ gridRow: "2", gridColumn: "3" }}>
+                            <p className="AboutMeLanguagesLevel">Intermediate</p>
+                            <p className="AboutMeLanguagesPoint">[TOEIC: 670 3 years ago]</p>
                         </div>
-                        <div style={{ gridRow: "3", gridColumn: "1", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                            <img src="/webresume/images/Japan_flag.png" style={{ height: "50px" }} />
+                        <div className="AboutMeLanguagesFlag" style={{ gridRow: "3", gridColumn: "1" }}>
+                            <img src="/webresume/images/Japan_flag.png" />
                         </div>
-                        <div style={{ gridRow: "3", gridColumn: "2", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24, textTransform: "uppercase", color: COLORS.Red, paddingBlockStart: 5, paddingBlockEnd: 5 }}>Japanese</p>
+                        <div className="AboutMeLanguagesLanguage" style={{ gridRow: "3", gridColumn: "2" }}>
+                            <p>Japanese</p>
                         </div>
-                        <div style={{ gridRow: "3", gridColumn: "3", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                            <p style={{ fontSize: 24 }}>Basic</p>
-                            <p style={{ fontSize: 18 }}>[JLPT: N4]</p>
+                        <div className="AboutMeLanguagesExplanation" style={{ gridRow: "3", gridColumn: "3" }}>
+                            <p className="AboutMeLanguagesLevel" >Basic</p>
+                            <p className="AboutMeLanguagesPoint">[JLPT: N4]</p>
                         </div>
                     </div>
                 </div>

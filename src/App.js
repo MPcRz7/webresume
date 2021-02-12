@@ -6,7 +6,8 @@ import ExperiencePage from "./MainPages/ExperiencePage.js";
 import PortfolioPage from "./MainPages/PortfolioPage.js";
 import AboutMePage from "./MainPages/AboutMePage.js";
 import NotFoundPage from "./MainPages/NotFoundPage.js";
-import "./App.css";
+//import "./App.css";
+import "./Styles/style.scss";
 
 import WindowSize from "./Handler/WindowSize.js";
 

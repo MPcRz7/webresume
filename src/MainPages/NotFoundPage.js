@@ -7,11 +7,13 @@ const NotFoundPage = () => {
     const headerHeight = 120;
     const footerHeight = 145;
     const bodyHeight = windowHeight - headerHeight - footerHeight;
+    const threshold = 1100;
+    const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
     return (
         <div>
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
-                <div style={{ height: bodyHeight, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                    <p style={{ fontSize: 150 }}>404 Not found</p>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>
+                <div className="NotFoundDiv" style={{ height: bodyHeight }}>
+                    <p>404 Not found</p>
                 </div>
             </LayoutTemplate>
         </div>

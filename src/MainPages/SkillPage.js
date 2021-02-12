@@ -32,9 +32,9 @@ const SkillPage = () => {
         return (
             skills.map((skill) => {
                 return (
-                    <div key={skill.id} style={{ padding: 30 }}>
-                        <p style={{ fontSize: 24, paddingBlockStart: 10, paddingBlockEnd: 10 }}>{skill.category}</p>
-                        <div style={{ display: "flex", width: window.innerWidth, overflowX: "scroll", position: "relative" }}>
+                    <div className="renderCategories" key={skill.id}>
+                        <p>{skill.category}</p>
+                        <div className="renderCategoriesDiv" style={{ width: window.innerWidth }}>
                             {renderItems(skill.items)}
                         </div>
                     </div>
@@ -47,9 +47,11 @@ const SkillPage = () => {
     const headerHeight = 120;
     const footerHeight = 145;
     const bodyHeight = windowHeight - headerHeight - footerHeight;
+    const threshold = 1100;
+    const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
     return (
         <body className="skill">
-            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth}>
+            <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>
                 <div>{renderCategories()}</div>
             </LayoutTemplate>
         </body>

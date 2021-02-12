@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Alatsi-Regular";
   src : url("./fonts/Alatsi-Regular.ttf");
 }
@@ -15,33 +15,23 @@ a {
 
 a:hover {
   color: brown;
-}
-
-/* a.current:link, a.current:visited {
-  color: #00FF00;
-  background-color: #000000;
 } */
 
-/* a:link, a:visited {
-  color:pink;
-} */
-
-body.home a.home:link,
+/* body.home a.home:link,
 body.skill a.skill:link,
 body.experience a.experience:link,
 body.portfolio a.portfolio:link,
 body.aboutme a.aboutme:link {
   -webkit-text-stroke: 2px;
   color:pink;
-}
+} */
 
-.HeaderLinkPage {
+/* .HeaderLinkPage {
   text-transform: uppercase;
-  /* margin-inline: 30px; */
   margin-inline-start: 30px;
   margin-inline-end: 30px;
   font-size: 24px;
-}
+} */
 
 /* .App {
   text-align: center;

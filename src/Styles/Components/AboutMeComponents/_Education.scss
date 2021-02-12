@@ -1,0 +1,73 @@
+.AboutMeEducation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .AboutMeEducation2 {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        padding-left: 40px;
+
+        .AboutMeEducationImage {
+            grid-row: 1;
+            grid-column: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 80px;
+            }
+        }
+
+        .AboutMeEducationExplanation {
+            grid-row: 1;
+            grid-column: 2;
+
+            .AboutMeEducationName {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: $textColor1;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .AboutMeEducationDetails {
+                font-size: 18px;
+            }
+        }
+
+        .AboutMeEducationImage2 {
+            grid-row: 2;
+            grid-column: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 90px;
+            }
+        }
+
+        .AboutMeEducationExplanation2 {
+            grid-row: 2;
+            grid-column: 2;
+
+            .AboutMeEducationName2 {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: $textColor1;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .AboutMeEducationDetails2 {
+                font-size: 18px;
+            }
+        }
+
+
+    }
+}
