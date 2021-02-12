@@ -6,11 +6,11 @@ class PortfolioListItemTemplate extends Component {
 
     }
 
-    renderLearnedSkill(learnedSkills) {
+    renderLearnedSkill(learnedSkills, factor) {
         return (
             learnedSkills.map((learnedSkill) => {
                 return (
-                    <p key={learnedSkill}>
+                    <p key={learnedSkill} style={{ fontSize: 16*factor }}>
                         <span>- </span>
                         <span>{learnedSkill}</span>
                     </p>
@@ -20,37 +20,39 @@ class PortfolioListItemTemplate extends Component {
     }
 
     render() {
-        const { appName, framework, workingType, description, numberOfDevMembers, learnedSkills, imageAppPath, imageFrameworkPath } = this.props;
+        const { appName, framework, workingType, description, numberOfDevMembers, learnedSkills, imageAppPath, imageFrameworkPath, windowWidth, factor } = this.props;
+        
+        const templateWidth = windowWidth*factor;
         return (
-            <div className="PortfolioListItemTemplate">
+            <div className="PortfolioListItemTemplate" style={{ width: templateWidth, maxWidth: 420 }}>
                 <div className="PortfolioListItemTemplateImage">
                     <div className="PortfolioListItemTemplateProfile">
-                        <div className="PortfolioListItemTemplateAppPic" style={{ backgroundImage: `url(${imageAppPath})` }} />
-                        <div className="PortfolioListItemTemplateFrameworkPic" style={{ backgroundImage: `url(${imageFrameworkPath})` }} />
+                        <div className="PortfolioListItemTemplateAppPic" style={{ backgroundImage: `url(${imageAppPath})`, width: 150*factor, height: 150*factor }} />
+                        <div className="PortfolioListItemTemplateFrameworkPic" style={{ backgroundImage: `url(${imageFrameworkPath})`, width: 50*factor, height: 50*factor }} />
                     </div>
                     <div className="PortfolioListItemTemplateTags">
                         <div className="PortfolioListItemTemplateWorkingType">
-                            <p>{workingType}</p>
+                            <p style={{ fontSize: 16*factor }}>{workingType}</p>
                         </div>
                     </div>
                 </div>
                 <div className="PortfolioListItemTemplateTopic">
-                    <p className="PortfolioListItemTemplateAppName">{appName}</p>
-                    <p className="PortfolioListItemTemplateFrameworkName">[{framework}]</p>
+                    <p className="PortfolioListItemTemplateAppName" style={{ fontSize: 24*factor }}>{appName}</p>
+                    <p className="PortfolioListItemTemplateFrameworkName" style={{ fontSize: 18*factor }}>[{framework}]</p>
                 </div>
                 <div>
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="PortfolioListItemTemplateExplanationTitle">Description: </span>
                         <span>{description}</span>
                     </p>
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="PortfolioListItemTemplateExplanationTitle">Number of dev members: </span>
                         <span>{numberOfDevMembers}</span>
                     </p>
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="PortfolioListItemTemplateExplanationTitle">Learned Skill: </span>
                     </p>
-                    {this.renderLearnedSkill(learnedSkills)}
+                    {this.renderLearnedSkill(learnedSkills, factor)}
                 </div>
             </div>
         )

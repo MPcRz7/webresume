@@ -22,7 +22,7 @@ const PortfolioPage = () => {
             portfolio.map((createdApp) => {
                 return (
                     <div key={createdApp.id}>
-                        <PortfolioListItemTemplate {...createdApp} />
+                        <PortfolioListItemTemplate {...createdApp} windowWidth={windowWidth} factor={factor2} />
                     </div>
                 )
             })
@@ -36,6 +36,9 @@ const PortfolioPage = () => {
 
     const threshold = 1100;
     const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
+
+    const threshold2 = 700;
+    const factor2 = windowWidth < threshold2 ? (windowWidth/threshold2) : 1;
     return (
         <body className="portfolio">
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>

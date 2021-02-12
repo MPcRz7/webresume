@@ -22,7 +22,7 @@ const ExperiencePage = () => {
             experiences.map((experience) => {
                 return (
                     <div key={experience.id}>
-                        <ExperienceListItemTemplate {...experience} windowWidth={windowWidth} />
+                        <ExperienceListItemTemplate {...experience} windowWidth={windowWidth} factor={factor2} />
                     </div>
                 )
             })
@@ -36,6 +36,9 @@ const ExperiencePage = () => {
 
     const threshold = 1100;
     const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
+
+    const threshold2 = 700;
+    const factor2 = windowWidth < threshold2 ? (windowWidth/threshold2) : 1;
     return (
         <body className="experience">
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>

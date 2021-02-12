@@ -7,12 +7,12 @@ class SkillListItemTemplate extends Component {
     }
 
     render() {
-        const { name, level, imagePath } = this.props;
+        const { name, level, imagePath, factor } = this.props;
         return (
-            <div className="SkillListItemTemplate">
-                <img src={imagePath} />
-                <p className="skillName">{name}</p>
-                <p className="skillLevel">[{level}]</p>
+            <div className="SkillListItemTemplate" style={{ width: 400*factor }}>
+                <img src={imagePath} style={{ width: 400*factor }} />
+                <p className="skillName" style={{ fontSize: 24*factor }}>{name}</p>
+                <p className="skillLevel" style={{ fontSize: 18*factor }}>[{level}]</p>
             </div>
         )
     }

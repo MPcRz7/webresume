@@ -6,11 +6,11 @@ class ExperienceListItemTemplate extends Component {
 
     }
 
-    renderDetails(details) {
+    renderDetails(details, factor) {
         return(
             details.map( (detail) => {
                 return(
-                    <p key={detail}>
+                    <p key={detail} style={{ fontSize: 16*factor }}>
                         <span>- </span>
                         <span>{detail}</span>
                     </p>
@@ -20,7 +20,7 @@ class ExperienceListItemTemplate extends Component {
     }
 
     render() {
-        const { companyName, Duration, workExperience, position, description, details, imageCompanyPath, windowWidth } = this.props;
+        const { companyName, Duration, workExperience, position, description, details, imageCompanyPath, windowWidth, factor } = this.props;
         const windowWidthHalf = windowWidth / 2;
         return (
             <div className="ExperienceListItemTemplate">
@@ -33,22 +33,22 @@ class ExperienceListItemTemplate extends Component {
                     </div>}
                 </div>
                 <div className="ExperienceListItemTemplateTopic">
-                    <p className="ExperienceListItemTemplateCompanyName">{companyName}</p>
-                    {workExperience && <p className="ExperienceListItemTemplateWorkExperience">[{workExperience}]</p>}
+                    <p className="ExperienceListItemTemplateCompanyName" style={{ fontSize: 24*factor }}>{companyName}</p>
+                    {workExperience && <p className="ExperienceListItemTemplateWorkExperience" style={{ fontSize: 18*factor }}>[{workExperience}]</p>}
                 </div>
                 <div className="ExperienceListItemTemplateExplanation">
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="ExperienceListItemTemplateExplanationTitle">Position: </span>
                         <span>{position}</span>
                     </p>
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="ExperienceListItemTemplateExplanationTitle">Description: </span>
                         <span>{description}</span>
                     </p>
-                    <p>
+                    <p style={{ fontSize: 16*factor }}>
                         <span className="ExperienceListItemTemplateExplanationTitle">Details: </span>                       
                     </p>
-                    {this.renderDetails(details)}
+                    {this.renderDetails(details, factor)}
                 </div>
             </div>
         )

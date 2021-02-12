@@ -3,12 +3,12 @@ import COLORS from "../../StaticVariable/Colors.js";
 
 class CardTemplate extends Component {
     render() {
-        const { title = "Title", children } = this.props;
+        const { title = "Title", children, factor } = this.props;
         return (
-            <div className="CardTemplate">
+            <div className="CardTemplate" style={{ width: 600 * factor }}>
                 <div className="CardTemplate2">
                     <div className="CardTemplateTopic">
-                        <p>{title}</p>
+                        <p style={{ fontSize: 24 * factor }}>{title}</p>
                     </div>
                     <div className="CardTemplateBody">
                         {children}

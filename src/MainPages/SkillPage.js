@@ -22,7 +22,7 @@ const SkillPage = () => {
         return (
             items.map((item) => {
                 return (
-                    <SkillListItemTemplate key={item.id} {...item} />
+                    <SkillListItemTemplate key={item.id} {...item} factor={factor2} />
                 )
             })
         )
@@ -33,8 +33,8 @@ const SkillPage = () => {
             skills.map((skill) => {
                 return (
                     <div className="renderCategories" key={skill.id}>
-                        <p>{skill.category}</p>
-                        <div className="renderCategoriesDiv" style={{ width: window.innerWidth }}>
+                        <p style={{ fontSize: 24*factor2 }}>{skill.category}</p>
+                        <div className="renderCategoriesDiv" style={{ width: windowWidth }}>
                             {renderItems(skill.items)}
                         </div>
                     </div>
@@ -49,6 +49,9 @@ const SkillPage = () => {
     const bodyHeight = windowHeight - headerHeight - footerHeight;
     const threshold = 1100;
     const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
+
+    const threshold2 = 800;
+    const factor2 = windowWidth < threshold2 ? (windowWidth/threshold2) : 1;
     return (
         <body className="skill">
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>

@@ -14,13 +14,13 @@ const AboutMePage = () => {
             return (
                 <div className="renderCardsFull">
                     <div className="renderCardFullSummary">
-                        <Summary />
+                        <Summary factor={factor2}/>
                     </div>
                     <div className="renderCardFullEducation">
-                        <Education />
+                        <Education factor={factor2}/>
                     </div>
                     <div className="renderCardFullLanguages">
-                        <Languages />
+                        <Languages factor={factor2}/>
                     </div>
                 </div>
             )
@@ -28,13 +28,13 @@ const AboutMePage = () => {
             return (
                 <div className="renderCardsSmall">
                     <div className="renderCardsSmallDiv">
-                        <Summary />
+                        <Summary factor={factor2}/>
                     </div>
                     <div className="renderCardsSmallDiv">
-                        <Education />
+                        <Education factor={factor2}/>
                     </div>
                     <div className="renderCardsSmallDiv">
-                        <Languages />
+                        <Languages factor={factor2}/>
                     </div>
                 </div>
             )
@@ -48,12 +48,14 @@ const AboutMePage = () => {
 
     const threshold = 1100;
     const factor = windowWidth < threshold ? (windowWidth/threshold) : 1;
-    //console.log("window width | " + windowWidth);
+
+    const threshold2 = 700;
+    const factor2 = windowWidth < threshold2 ? (windowWidth/threshold2) : 1;
     return (
         <body className="aboutme">
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>
                 <div style={{ width: windowWidth }}>
-                    <Profile />
+                    <Profile factor={factor} />
                     <div className="renderCards">
                         {renderCards()}
                     </div>
