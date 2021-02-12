@@ -13,7 +13,7 @@ const NotFoundPage = () => {
         <div>
             <LayoutTemplate headerHeight={headerHeight} footerHeight={footerHeight} bodyHeight={bodyHeight} windowWidth={windowWidth} factor={factor}>
                 <div className="NotFoundDiv" style={{ height: bodyHeight }}>
-                    <p>404 Not found</p>
+                    <p style={{ fontSize: 150*factor }}>404 Not found</p>
                 </div>
             </LayoutTemplate>
         </div>
