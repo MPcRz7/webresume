@@ -46,6 +46,34 @@
     }
 }
 
+.FooterExtension {
+    background-color: $backgroundColor2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+    .FooterExtension2 {
+        .FooterExtensionAboutMeSummary {
+            padding: 10px;
+
+            .FooterExtensionAboutMeSummaryHeadTopic {
+                color: $textColor1;
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+
+            .FooterExtensionAboutMeSummaryTopic {
+                color: $textColor1;
+                text-transform: uppercase;
+                font-size: 24px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
 .renderSmallFooter {
     display: flex;
     flex-direction: column;
