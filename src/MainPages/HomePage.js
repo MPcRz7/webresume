@@ -35,13 +35,6 @@ const Home = () => {
                 </div>
             )
         }else{          
-            
-            // const minWidth = 600;
-            // const windowWidthFactor = (threshold - windowWidth)/(threshold - minWidth);
-            // const fontSizeMax = 24;
-            // const fontSizeMin = 15;
-            // const fontSizeCompensate = (fontSizeMax - fontSizeMin)*windowWidthFactor;
-            // const fontSizeRelateWidth = fontSizeCompensate >= 0 ? fontSizeCompensate <= (fontSizeMax - fontSizeMin) ? (fontSizeMax - fontSizeCompensate) : fontSizeMin : fontSizeMax;
             return (
                 <div className="UserSmall" style={{ minHeight: minHeight*factor }}>
                     <div className="UserSmallPic">
