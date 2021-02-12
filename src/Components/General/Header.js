@@ -40,7 +40,7 @@ class Header extends Component {
             return(
                 <div className="renderHeader" style={{ height: headerHeight }}>
                     <div className="renderHeaderLogo">
-                        <Link to="/webresume" ><img src="/webresume/images/Mos_logo.png" width={60*factor} style={{ borderRadius: "25%" }} /></Link>
+                        <Link to="/webresume" ><img src="/webresume/images/Profile_Mos_logo.png" width={60*factor} style={{ borderRadius: "25%" }} /></Link>
                     </div>
                     <div className="renderHeaderPageName">
                         <p style={{ fontSize: 24*factor, marginInlineStart: 30*factor, marginInlineEnd: 30*factor }}><Link to="/webresume" className="home">Home</Link></p>

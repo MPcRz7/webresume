@@ -9,7 +9,7 @@ class Profile extends Component{
                 <div className="AboutMeProfile2">
                     <div className="AboutMeProfilePic">
                         <div className="AboutMeProfilePicMosPic" style={{ width: 140*factor, height: 140*factor }}>
-                            <img src="/webresume/images/MosProfile_1.png" />
+                            <img src="/webresume/images/Profile_MosProfile_1.png" />
                         </div>
                     </div>
                     <div className="AboutMeProfileName">

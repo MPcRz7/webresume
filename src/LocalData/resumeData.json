@@ -175,7 +175,7 @@
                         "Managed folder structure and component for each pages.",
                         "Analyzed the design, and suggested better way."
                     ],
-                    "imageCompanyPath": "/webresume/images/ThisIsDMG_logo.png"
+                    "imageCompanyPath": "/webresume/images/Profile_ThisIsDMG_logo.png"
                 },
                 {
                     "id": 2,
@@ -194,7 +194,7 @@
                         "Received \"Good quality work of the year\" award from company.",
                         "Trained and supported new graduation member (new staff)."
                     ],
-                    "imageCompanyPath": "/webresume/images/TDET_logo.png"
+                    "imageCompanyPath": "/webresume/images/Profile_TDET_logo.png"
                 },
                 {
                     "id": 3,
@@ -208,7 +208,7 @@
                         "Create algorithm with Machine learning method for detect falling behevior from acceleration, rotation, magnetic data by using Arduino",
                         "Create algorithm for training decision model for more precising fall detection by using MATLAB"
                     ],
-                    "imageCompanyPath": "/webresume/images/EECU_logo.png"
+                    "imageCompanyPath": "/webresume/images/Profile_EECU_logo.png"
                 },
                 {
                     "id": 4,
@@ -223,7 +223,7 @@
                         "Debug signals with ChipScope for more precising.",
                         "Create NFC presentation board."
                     ],
-                    "imageCompanyPath": "/webresume/images/ThaiGerTec_logo.png"
+                    "imageCompanyPath": "/webresume/images/Profile_ThaiGerTec_logo.png"
                 }
             ]
         }
@@ -245,15 +245,18 @@
                     "learnedSkills" : [
                         "Web application development skill.",
                         "Basic ReactJS framework.",
+                        "Basic React Hook.",
                         "Basic Redux process understanding.",
                         "Understanding more about API request.",
+                        "Basic Style by using scss file",
+                        "Learn how to due with different screen layout and font size",
                         "Learned more about complicated front-end layout.",
                         "Understanding more about Javascript programming language.",
                         "Good coding structure.",
                         "Designed web application layout using Figma"
                     ],
-                    "imageAppPath": "/webresume/images/Mos_logo.png",
-                    "imageFrameworkPath": "/webresume/images/ReactJS_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_Mos_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_ReactJS_logo.png"
                 },
                 {
                     "id": 2,
@@ -272,8 +275,8 @@
                         "Basic API testing using Postman.",
                         "Designed mobile application layout using Adobe Expereince Design."
                     ],
-                    "imageAppPath": "/webresume/images/JustTongJum_logo.png",
-                    "imageFrameworkPath": "/webresume/images/ReactNative_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_JustTongJum_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
                 },
                 {
                     "id": 3,
@@ -291,8 +294,8 @@
                         "Basic model data for connect with API data.",
                         "Understanding more about C# programming language."
                     ],
-                    "imageAppPath": "/webresume/images/AppdriveXApp_logo.png",
-                    "imageFrameworkPath": "/webresume/images/Xamarin_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_AppdriveX_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
                     "id": 4,
@@ -311,8 +314,8 @@
                         "Basic plan and estimate tasks for team.",
                         "Basic folder structure management."
                     ],
-                    "imageAppPath": "/webresume/images/TUVApp_logo.png",
-                    "imageFrameworkPath": "/webresume/images/Xamarin_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_TUVApp_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
                     "id": 5,
@@ -330,8 +333,8 @@
                         "Basic dealing with landscape and portrait mode",
                         "Basic dealing with difference screen size"
                     ],
-                    "imageAppPath": "/webresume/images/EPOApp_logo.png",
-                    "imageFrameworkPath": "/webresume/images/Xamarin_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_EPOApp_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
                     "id": 6,
@@ -346,8 +349,8 @@
                         "Basic front-end layout.",
                         "Designed mobile application layout using Figma."
                     ],
-                    "imageAppPath": "/webresume/images/Aggro_logo.png",
-                    "imageFrameworkPath": "/webresume/images/ReactNative_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_Aggro_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
                 },
                 {
                     "id": 7,
@@ -362,8 +365,8 @@
                         "Basic Unity3D engine.",
                         "Basic task planning."
                     ],
-                    "imageAppPath": "/webresume/images/Offyeeha_logo.png",
-                    "imageFrameworkPath": "/webresume/images/Unity3D_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_Offyeeha_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_Unity3D_logo.png"
                 }
             ]
         }
