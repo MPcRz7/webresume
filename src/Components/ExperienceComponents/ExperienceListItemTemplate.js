@@ -20,9 +20,8 @@ class ExperienceListItemTemplate extends Component {
     }
 
     render() {
-        const { companyName, Duration, workExperience, position, description, details, imageCompanyPath } = this.props;
-        const windowWidth = window.innerWidth;
-        const windowWidthHalf = window.innerWidth / 2;
+        const { companyName, Duration, workExperience, position, description, details, imageCompanyPath, windowWidth } = this.props;
+        const windowWidthHalf = windowWidth / 2;
         return (
             <div className="ExperienceListItemTemplate">
                 <div className="ExperienceListItemTemplateImage" style={{ width: windowWidthHalf }}>

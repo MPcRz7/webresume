@@ -22,7 +22,7 @@ const ExperiencePage = () => {
             experiences.map((experience) => {
                 return (
                     <div key={experience.id}>
-                        <ExperienceListItemTemplate {...experience} />
+                        <ExperienceListItemTemplate {...experience} windowWidth={windowWidth} />
                     </div>
                 )
             })
