@@ -80,14 +80,14 @@
     }
 
     .ExperienceListItemTemplateTextTimeline {
-        width: 75%;
+        width: 90%;
         min-width: 400px;
         display: flex;
         align-items: stretch;
         .ExperienceListItemTemplateTimeline2 {
             background-color: $backgroundColor1;
             width: 20px;
-            transform: translateX(15px);
+            // transform: translateX(15px);
         }
         .ExperienceListItemTemplateText {
             display: flex;
@@ -96,7 +96,7 @@
             width: 100%;
 
             .ExperienceListItemTemplateText2 {
-                transform: translateX(-10px);
+                // transform: translateX(-10px);
                 padding-left: 50px;
                 padding-right: 50px;
                 padding-bottom: 20px;

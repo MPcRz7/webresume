@@ -24,10 +24,10 @@ class ExperienceListItemTemplate extends Component {
         const windowWidthHalf = windowWidth / 2;
         return (
             <div className="ExperienceListItemTemplate" >
-                <div className="ExperienceListItemTemplateImage" style={{ width: windowWidth * 0.75, height: 250 * factor }}>
+                <div className="ExperienceListItemTemplateImage" style={{ width: windowWidth * 0.9, height: 250 * factor }}>
                     <div className="ExperienceListItemTemplateLongBlock" style={{ height: 20 * factor }} />
-                    <div className="ExperienceListItemTemplateTimeline" />
-                    <div className="ExperienceListItemTemplatePoint" />
+                    <div className="ExperienceListItemTemplateTimeline" style={{ width: 20*factor, left: 15*factor }} />
+                    <div className="ExperienceListItemTemplatePoint" style={{ width: 50*factor, height: 50*factor }} />
                     <p className="ExperienceListItemTemplateDuration" style={{ fontSize: 16 * factor }}>{Duration}</p>
                     <div className="ExperienceListItemTemplateCompanyImage" style={{ height: 170 * factor, width: 170 * factor, borderWidth: 12 * factor }}>
                         <div className="ExperienceListItemTemplateCompanyImage2" style={{ borderWidth: 6*factor }}>
@@ -36,7 +36,7 @@ class ExperienceListItemTemplate extends Component {
                     </div>
                 </div>
                 <div className="ExperienceListItemTemplateTextTimeline">
-                    <div className="ExperienceListItemTemplateTimeline2" />
+                    <div className="ExperienceListItemTemplateTimeline2" style={{ width: 20*factor, transform: `translateX(${15*factor}px)`  }} />
                     <div className="ExperienceListItemTemplateText">
                         <div className="ExperienceListItemTemplateText2" style={{ paddingLeft: 50 * factor, paddingRight: 50 * factor }}>
                             <div className="ExperienceListItemTemplateTopic">
