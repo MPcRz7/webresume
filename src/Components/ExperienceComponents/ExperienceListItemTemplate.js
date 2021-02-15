@@ -38,7 +38,7 @@ class ExperienceListItemTemplate extends Component {
                 <div className="ExperienceListItemTemplateTextTimeline">
                     <div className="ExperienceListItemTemplateTimeline2" style={{ width: 20*factor, transform: `translateX(${15*factor}px)`  }} />
                     <div className="ExperienceListItemTemplateText">
-                        <div className="ExperienceListItemTemplateText2" style={{ paddingLeft: 50 * factor, paddingRight: 50 * factor }}>
+                        <div className="ExperienceListItemTemplateText2" style={{ paddingLeft: 30 * factor, paddingRight: 30 * factor }}>
                             <div className="ExperienceListItemTemplateTopic">
                                 <p className="ExperienceListItemTemplateCompanyName" style={{ fontSize: 22 * factor }}>{companyName}</p>
                                 <p className="ExperienceListItemTemplateWorkExperience" style={{ fontSize: 18 * factor }}>[{workExperience}]</p>

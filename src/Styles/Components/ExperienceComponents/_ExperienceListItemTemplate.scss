@@ -97,9 +97,10 @@
 
             .ExperienceListItemTemplateText2 {
                 // transform: translateX(-10px);
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-left: 30px;
+                padding-right: 30px;
                 padding-bottom: 20px;
+                max-width: 600px;
 
                 .ExperienceListItemTemplateTopic {
                     display: flex;
