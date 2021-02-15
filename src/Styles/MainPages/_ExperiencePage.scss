@@ -1,6 +1,7 @@
 .renderCompanies{
     display: flex;
+    flex-direction: column;
     position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: x;
+    overflow-y: scroll;
+    scroll-snap-type: y;
 }

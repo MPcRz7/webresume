@@ -8,8 +8,9 @@
     }
 
     .renderCategoriesDiv {
-        position: relative;
-        overflow-x: scroll;
+        // position: relative;
+        // overflow-x: scroll;
         display: flex;
+        flex-flow: wrap;
     }
 }

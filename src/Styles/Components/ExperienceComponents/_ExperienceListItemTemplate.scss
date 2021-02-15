@@ -1,90 +1,130 @@
-.ExperienceListItemTemplate{
+.ExperienceListItemTemplate {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
     scroll-snap-align: center;
 
-    .ExperienceListItemTemplateImage{
+    .ExperienceListItemTemplateImage {
         position: relative;
-        height: 300px;
+        height: 250px;
         min-width: 400px;
 
-        .ExperienceListItemTemplateCompanyFrame{
-            height: 300px;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-
-        .ExperienceListItemTemplateLongBlock{
+        .ExperienceListItemTemplateLongBlock {
             position: absolute;
-            left: 0;
+            left: 25px;
             right: 0;
-            top: 25px;
+            top: 50%;
             transform: translateY(-50%);
             background-color: $backgroundColor1;
-            width: 100%;
+            width: 50%;
             height: 20px;
         }
 
-        .ExperienceListItemTemplateDuration{
+        .ExperienceListItemTemplateTimeline {
+            position: absolute;
+            left: 15px;
+            background-color: $backgroundColor1;
+            width: 20px;
+            height: 100%;
+        }
+
+        .ExperienceListItemTemplatePoint {
             position: absolute;
             left: 0;
-            right: 0;
-            top: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $backgroundColor1;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .ExperienceListItemTemplateDuration {
+            position: absolute;
+            left: 10%;
+            top: 50%;
             transform: translateY(-50%);
             text-align: center;
             color: $textColor3;
         }
 
-        .ExperienceListItemTemplateCompanyImage{
+        .ExperienceListItemTemplateCompanyImage {
             position: absolute;
             left: 50%;
-            bottom: 0%;
-            transform: translateX(-50%);
+            top: 50%;
+            transform: translate(-50%, -50%);
             height: 170px;
             width: 170px;
             border-radius: 50%;
             overflow: hidden;
-            border: 15px solid transparent;
+            border: 12px solid $backgroundColor1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            img {
-                width: 100%;
-                height: 100%;
+            .ExperienceListItemTemplateCompanyImage2 {
                 border-radius: 50%;
-                object-fit: cover;
+                overflow: hidden;
+                border: 6px solid $backgroundColor3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
             }
         }
     }
 
-    .ExperienceListItemTemplateTopic{
+    .ExperienceListItemTemplateTextTimeline {
+        width: 75%;
+        min-width: 400px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-left: 30px;
-        padding-right: 30px;
-
-        .ExperienceListItemTemplateCompanyName {
-            font-size: 24px;
+        align-items: stretch;
+        .ExperienceListItemTemplateTimeline2 {
+            background-color: $backgroundColor1;
+            width: 20px;
+            transform: translateX(15px);
         }
+        .ExperienceListItemTemplateText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
 
-        .ExperienceListItemTemplateWorkExperience {
-            font-size: 18px;
-        }
-    }
+            .ExperienceListItemTemplateText2 {
+                transform: translateX(-10px);
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-bottom: 20px;
 
-    .ExperienceListItemTemplateExplanation {
-        padding-left: 30px;
-        padding-right: 30px;
+                .ExperienceListItemTemplateTopic {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
 
-        .ExperienceListItemTemplateExplanationTitle {
-            color: $textColor1;
-            text-transform: uppercase;
+                    .ExperienceListItemTemplateCompanyName {
+                        font-size: 22px;
+                    }
+
+                    .ExperienceListItemTemplateWorkExperience {
+                        font-size: 18px;
+                    }
+                }
+
+                .ExperienceListItemTemplateExplanation {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+
+                    .ExperienceListItemTemplateExplanationTitle {
+                        color: $textColor1;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
     }
 }
-
