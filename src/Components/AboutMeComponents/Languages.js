@@ -26,7 +26,7 @@ class Languages extends Component{
                         </div>
                         <div className="AboutMeLanguagesExplanation" style={{ gridRow: "2", gridColumn: "3" }}>
                             <p className="AboutMeLanguagesLevel" style={{ fontSize: 24*factor }}>Intermediate</p>
-                            <p className="AboutMeLanguagesPoint" style={{ fontSize: 18*factor }}>[TOEIC: 670 3 years ago]</p>
+                            <p className="AboutMeLanguagesPoint" style={{ fontSize: 18*factor }}>[TOEIC: 670, 4 years ago]</p>
                         </div>
                         <div className="AboutMeLanguagesFlag" style={{ gridRow: "3", gridColumn: "1" }}>
                             <img src="/webresume/images/Japan_flag.png" style={{ height: 50*factor }}/>

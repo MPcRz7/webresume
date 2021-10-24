@@ -44,6 +44,18 @@
                             "name": "Xamarin",
                             "level": "Intermediate",
                             "imagePath": "/webresume/images/Program_Xamarin.png"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ionic",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_Xamarin.png"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Flutter",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_Xamarin.png"
                         }
                     ]
                 },
@@ -77,6 +89,12 @@
                         },
                         {
                             "id": 5,
+                            "name": "Dart",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_MATLAB.png"
+                        },
+                        {
+                            "id": 6,
                             "name": "MATLAB",
                             "level": "Basic",
                             "imagePath": "/webresume/images/Program_MATLAB.png"
@@ -85,11 +103,17 @@
                 },
                 {
                     "id": 3,
-                    "category": "Backend",
+                    "category": "Database & Backend",
                     "items": [
                         {
                             "id": 1,
-                            "name": "API",
+                            "name": "Firebase",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_API.png"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Node JS",
                             "level": "Basic",
                             "imagePath": "/webresume/images/Program_API.png"
                         }

@@ -44,6 +44,18 @@
                             "name": "Xamarin",
                             "level": "Intermediate",
                             "imagePath": "/webresume/images/Program_Xamarin.png"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Ionic",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_Ionic.png"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Flutter",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_Xamarin.png"
                         }
                     ]
                 },
@@ -66,7 +78,7 @@
                         {
                             "id": 3,
                             "name": "Java",
-                            "level": "Basic",
+                            "level": "Intermediate",
                             "imagePath": "/webresume/images/Program_Java.png"
                         },
                         {
@@ -77,6 +89,12 @@
                         },
                         {
                             "id": 5,
+                            "name": "Dart",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_MATLAB.png"
+                        },
+                        {
+                            "id": 6,
                             "name": "MATLAB",
                             "level": "Basic",
                             "imagePath": "/webresume/images/Program_MATLAB.png"
@@ -85,13 +103,19 @@
                 },
                 {
                     "id": 3,
-                    "category": "Backend",
+                    "category": "Database & Backend",
                     "items": [
                         {
                             "id": 1,
-                            "name": "API",
+                            "name": "Firebase",
                             "level": "Basic",
-                            "imagePath": "/webresume/images/Program_API.png"
+                            "imagePath": "/webresume/images/Program_Firebase.png"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Node JS",
+                            "level": "Basic",
+                            "imagePath": "/webresume/images/Program_NodeJS.png"
                         }
                     ]
                 },
@@ -161,15 +185,33 @@
             "userExperiences": [
                 {
                     "id": 1,
+                    "companyName": "Mirum Thailand Company Limited",
+                    "Duration": "2021-Now",
+                    "workExperience": "8 months",
+                    "position": "Mobile Application Developer",
+                    "description": "2 mobile application projects development experience",
+                    "details": [
+                        "Develop iOS and Android app by using React Native framework",
+                        "Developed layout and functions follow the design.",                       
+                        "React Hook, React Redux, Animated, Regular Expression",
+                        "Integrated code with API",                       
+                        "Using React Native Firebase for store some data.",
+                        "Deployed application to Testflight and App Store.",
+                        "Developed Web and Mobile App by using Ionic Framework."
+                    ],
+                    "imageCompanyPath": "/webresume/images/Profile_ThisIsDMG_logo.png"
+                },
+                {
+                    "id": 2,
                     "companyName": "THIS IS! Digital Media Group GmbH",
-                    "Duration": "2019-Now",
+                    "Duration": "2019-2020",
                     "workExperience": "1 year 2 months",
                     "position": "Mobile Application Developer",
                     "description": "3 mobile application projects development experience",
                     "details": [
                         "Develop iOS and Android app by using Xamarin framework",
                         "Developed layout and functions follow the design.",                       
-                        "Created API GET/POST/PUT/DELETE request function",
+                        "Integrated code with API",
                         "Created ER diagram and model follow the requirement",                       
                         "Planed and estimated the project task",
                         "Managed folder structure and component for each pages.",
@@ -178,17 +220,18 @@
                     "imageCompanyPath": "/webresume/images/Profile_ThisIsDMG_logo.png"
                 },
                 {
-                    "id": 2,
+                    "id": 3,
                     "companyName": "Toyota Tsusho Denso Electronics Thailand",
                     "Duration": "2017-2019",
-                    "workExperience": "2 years 1 month",
+                    "workExperience": "2 years 2 months",
                     "position": "Software Engineer",
                     "description": "More than 10 projects development experience",
                     "details": [
                         "Developed software for engine ECUs (Electronic Control Units by using model base system (MATLAB Simulink).",
-                        "Developed tools for checking easy mistake and reducing some process in document work by using VBA excel.",
+                        "Understanding and Developed Battery Management System.",        
                         "Designed, created and modified modules follow requirement.",
-                        "Designed and created testcase for checking all possible case before delivering to customer.",
+                        "Designed and created testcase for checking all possible case before delivering to customer. (MCDC Test)",
+                        "Developed tools for checking easy mistake and reducing some process in document work by using VBA excel.",
                         "Communicated, Reviewed design and test result with foriegn customer.",
                         "Planed managed and reviewed junior member work.",
                         "Received \"Good quality work of the year\" award from company.",
@@ -197,7 +240,7 @@
                     "imageCompanyPath": "/webresume/images/Profile_TDET_logo.png"
                 },
                 {
-                    "id": 3,
+                    "id": 4,
                     "companyName": "Chulalongkorn University",
                     "Duration": "2016-2017",
                     "workExperience": "Senior Project",
@@ -211,7 +254,7 @@
                     "imageCompanyPath": "/webresume/images/Profile_EECU_logo.png"
                 },
                 {
-                    "id": 4,
+                    "id": 5,
                     "companyName": "Thaigertec Co.,Ltd",
                     "Duration": "2016",
                     "workExperience": "Internship",
@@ -237,6 +280,27 @@
             "userPortfolio": [
                 {
                     "id": 1,
+                    "appName": "Serve",
+                    "framework": "React Native",
+                    "workingType": "Company Job",
+                    "description": "Serve is an application for Central Pattana Group's employee, shop owner, shop manager for managing everything in one app.",
+                    "numberOfDevMembers": "3+ Members",
+                    "learnedSkills" : [
+                        "More familiar with React Native framework.",
+                        "More familiar with React Hook.",
+                        "More familiar with Redux.",
+                        "Learned basic about Firebase and react native firebase.",
+                        "Understanding more about API request with authentication.",
+                        "Basic using Animated View front-end layout.",
+                        "Learned basic about security for app.",
+                        "More familiar with depolying app to testflight and App store.",
+                        "Understanding more about team working process."
+                    ],
+                    "imageAppPath": "/webresume/images/Profile_Mos_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
+                },
+                {
+                    "id": 2,
                     "appName": "Web Resume",
                     "framework": "React JS",
                     "workingType": "Self Learning",
@@ -259,7 +323,7 @@
                     "imageFrameworkPath": "/webresume/images/Profile_ReactJS_logo.png"
                 },
                 {
-                    "id": 2,
+                    "id": 3,
                     "appName": "Just Tong Jum",
                     "framework": "React Native",
                     "workingType": "Self Learning",
@@ -279,7 +343,23 @@
                     "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
                 },
                 {
-                    "id": 3,
+                    "id": 4,
+                    "appName": "NISSAN Showroom",
+                    "framework": "Ionic",
+                    "workingType": "Company Job",
+                    "description": "App that contain all about specification, functionality design of all Nissan cars.",
+                    "numberOfDevMembers": "2+ Members",
+                    "learnedSkills" : [
+                        "Got more experience more about Web application and Mobile application development.",
+                        "Basic layout about ionic framework.",
+                        "More familiar with Styling by using scss file",
+                        "Learn more about how to due with different screen layout and font size"
+                    ],
+                    "imageAppPath": "/webresume/images/Profile_Mos_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_ReactJS_logo.png"
+                },
+                {
+                    "id": 5,
                     "appName": "AppdriveX",
                     "framework": "Xamarin",
                     "workingType": "Company job",
@@ -298,11 +378,11 @@
                     "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
-                    "id": 4,
-                    "appName": "TUV App",
+                    "id": 6,
+                    "appName": "TUV NORD",
                     "framework": "Xamarin",
                     "workingType": "Company Job",
-                    "description": "TUV App is an application that can manage and assign the task to team member.",
+                    "description": "TUV NORD is an application that can manage and assign the task to team member.",
                     "numberOfDevMembers": "2 developers including me.",
                     "learnedSkills" : [
                         "Mobile application development skill.",
@@ -318,7 +398,7 @@
                     "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
-                    "id": 5,
+                    "id": 7,
                     "appName": "European Patent Office",
                     "framework": "Xamarin",
                     "workingType": "Company Job",
@@ -337,7 +417,7 @@
                     "imageFrameworkPath": "/webresume/images/Profile_Xamarin_logo.png"
                 },
                 {
-                    "id": 6,
+                    "id": 8,
                     "appName": "Aggro",
                     "framework": "React Native",
                     "workingType": "Freelance Job",
@@ -353,11 +433,11 @@
                     "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
                 },
                 {
-                    "id": 7,
-                    "appName": "Offyeeha Advanture",
+                    "id": 9,
+                    "appName": "Offyeehaa Advanture",
                     "framework": "Unity3D",
                     "workingType": "Self Learning",
-                    "description": "Offyeeha Advanture game is an indy game that created for my friend's birthday. The story in the game is relate to him and the people around him.",
+                    "description": "Offyeehaa Advanture game is an indy game that created for my friend's birthday. The story in the game is relate to him and the people around him.",
                     "numberOfDevMembers": "Only me.",
                     "learnedSkills" : [
                         "Basic advanture and indy game development.",
