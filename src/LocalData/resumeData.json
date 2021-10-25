@@ -55,7 +55,7 @@
                             "id": 5,
                             "name": "Flutter",
                             "level": "Basic",
-                            "imagePath": "/webresume/images/Program_Xamarin.png"
+                            "imagePath": "/webresume/images/Program_Flutter.png"
                         }
                     ]
                 },
@@ -91,7 +91,7 @@
                             "id": 5,
                             "name": "Dart",
                             "level": "Basic",
-                            "imagePath": "/webresume/images/Program_MATLAB.png"
+                            "imagePath": "/webresume/images/Program_Dart.png"
                         },
                         {
                             "id": 6,
@@ -199,7 +199,7 @@
                         "Deployed application to Testflight and App Store.",
                         "Developed Web and Mobile App by using Ionic Framework."
                     ],
-                    "imageCompanyPath": "/webresume/images/Profile_ThisIsDMG_logo.png"
+                    "imageCompanyPath": "/webresume/images/Profile_Mirum_logo.png"
                 },
                 {
                     "id": 2,
@@ -284,7 +284,7 @@
                     "framework": "React Native",
                     "workingType": "Company Job",
                     "description": "Serve is an application for Central Pattana Group's employee, shop owner, shop manager for managing everything in one app.",
-                    "numberOfDevMembers": "3+ Members",
+                    "numberOfDevMembers": "More than 3 developers including me.",
                     "learnedSkills" : [
                         "More familiar with React Native framework.",
                         "More familiar with React Hook.",
@@ -296,7 +296,7 @@
                         "More familiar with depolying app to testflight and App store.",
                         "Understanding more about team working process."
                     ],
-                    "imageAppPath": "/webresume/images/Profile_Mos_logo.png",
+                    "imageAppPath": "/webresume/images/Profile_Serve_logo.png",
                     "imageFrameworkPath": "/webresume/images/Profile_ReactNative_logo.png"
                 },
                 {
@@ -344,19 +344,19 @@
                 },
                 {
                     "id": 4,
-                    "appName": "NISSAN Showroom",
+                    "appName": "Nissan Innovation",
                     "framework": "Ionic",
                     "workingType": "Company Job",
                     "description": "App that contain all about specification, functionality design of all Nissan cars.",
-                    "numberOfDevMembers": "2+ Members",
+                    "numberOfDevMembers": "More than 2 developers including me.",
                     "learnedSkills" : [
                         "Got more experience more about Web application and Mobile application development.",
                         "Basic layout about ionic framework.",
                         "More familiar with Styling by using scss file",
                         "Learn more about how to due with different screen layout and font size"
                     ],
-                    "imageAppPath": "/webresume/images/Profile_Mos_logo.png",
-                    "imageFrameworkPath": "/webresume/images/Profile_ReactJS_logo.png"
+                    "imageAppPath": "/webresume/images/Profile_Nissan_logo.png",
+                    "imageFrameworkPath": "/webresume/images/Profile_Ionic_logo.png"
                 },
                 {
                     "id": 5,
