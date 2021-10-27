@@ -54,14 +54,14 @@ class Footer extends Component {
                             </div>
                             <div className="FooterExtensionAboutMeSummary">
                                 <p className="FooterExtensionAboutMeSummaryTopic" style={{ fontSize: 24 * factor }}>Experience</p>
-                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>3 years of experience about programming relate job.</p>
+                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>4 years of experience about programming relate job.</p>
                                 <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 2 years of experience in Software Engineer.</p>
-                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 1 year of experience in Mobile Application Developer.</p>
+                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 2 years of experience in Mobile Application Developer.</p>
                             </div>
                             <div className="FooterExtensionAboutMeSummary">
                                 <p className="FooterExtensionAboutMeSummaryTopic" style={{ fontSize: 24 * factor }}>Application Project</p>
-                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>6 applications project experience.</p>
-                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 3 mobile application projects for company job.</p>
+                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>8 applications project experience.</p>
+                                <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 5 mobile application projects for company job.</p>
                                 <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 1 mobile application project for self learning.</p>
                                 <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 1 mobile application project for freelance job.</p>
                                 <p style={{ fontSize: 24 * factor, color: "#FFFFFF" }}>- 1 web application project for self learning.</p>
